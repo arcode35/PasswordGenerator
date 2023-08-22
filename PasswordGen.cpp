@@ -6,9 +6,9 @@
 
 int main() {
     srand(time(NULL));
-    std::string alphabet = "ABCDEFGHIJKLMNOPQRSTUVQXYZabcdefghijklmnopqrstuvwxyz";
-    std::string numbers = "123456789";
-    std::string symbols = "!@#$%^&*()<>?:";
+    const std::string alphabet = "ABCDEFGHIJKLMNOPQRSTUVQXYZabcdefghijklmnopqrstuvwxyz";
+    const std::string numbers = "123456789";
+    const std::string symbols = "!@#$%^&*()<>?:";
 
     std::string password;
 
@@ -39,7 +39,7 @@ int main() {
     std::cout << "How many passwords would you like to generate? (y/n): ";
     std::cin >> num;
 
-    std::vector < std::string > passList;
+    std::vector <std::string> passList;
 
     for (int j = 1; j <= num; j++) {
 
